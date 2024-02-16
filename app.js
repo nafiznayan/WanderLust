@@ -67,10 +67,10 @@ const sessionOption = {
   };
 
 
-// Main rout
-  app.get("/" , (req,res)=> {
-    res.render("home.ejs");
-});
+  // Main rout
+// app.get("/",(req,res)=>{
+//     res.send("I am root");
+//  });
 
 app.use(session(sessionOption));
 app.use(flash());
