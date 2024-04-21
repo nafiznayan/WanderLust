@@ -43,19 +43,19 @@ app.use(methodoverride("_method"));
 app.engine("ejs",ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
 
-const store = MongoStore.create({
-    mongoUrl: dbUrl,
-    crypto:{
-        secret:process.env.SECRET,
-    },
-    touchAfter: 24*3600,
-});
-store.on("error",()=>{
-    console.log("ERROR in mongo session store:", err);
-});
+// const store = MongoStore.create({
+//     mongoUrl: dbUrl,
+//     crypto:{
+//         secret:process.env.SECRET,
+//     },
+//     touchAfter: 24*3600,
+// });
+// store.on("error",()=>{
+//     console.log("ERROR in mongo session store:", err);
+// });
 
 const sessionOption = {
-    store,
+    // store,
     secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
@@ -67,9 +67,10 @@ const sessionOption = {
   };
 
 
-  // Main rout
+// // Main rout
 // app.get("/",(req,res)=>{
-//     res.send("I am root");
+//     // res.send("all right");
+//    res.render("listings/index.ejs");
 //  });
 
 app.use(session(sessionOption));
@@ -88,14 +89,7 @@ app.use((req,res,next)=>{
     next();
 })
 
-// app.get("/demo",async(req,res)=>{
-//     let fakeUser = new User({
-//         email:"student@gmail.com",
-//         username:"delta-student"
-//     });
-//     let registerdUser = await User.register(fakeUser,"password");
-//     res.send(registerdUser);
-// })
+
 
 app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewRouter);
