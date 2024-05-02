@@ -23,7 +23,7 @@ const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
 const { error } = require("console");
 // Connecting to the Database(MongoDB)
-// const mongo_url = "mongodb://127.0.0.1:27017/wonderlust";
+const mongo_url = "mongodb://127.0.0.1:27017/wonderlust";
 const dbUrl =process.env.ATLASDB_URL;
 
 main().then(()=>{
@@ -43,19 +43,19 @@ app.use(methodoverride("_method"));
 app.engine("ejs",ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
 
-// const store = MongoStore.create({
-//     mongoUrl: dbUrl,
-//     crypto:{
-//         secret:process.env.SECRET,
-//     },
-//     touchAfter: 24*3600,
-// });
-// store.on("error",()=>{
-//     console.log("ERROR in mongo session store:", err);
-// });
+const store = MongoStore.create({
+    mongoUrl: dbUrl,
+    crypto:{
+        secret:process.env.SECRET,
+    },
+    touchAfter: 24*3600,
+});
+store.on("error",()=>{
+    console.log("ERROR in mongo session store:", err);
+});
 
 const sessionOption = {
-    // store,
+    store,
     secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
