@@ -67,11 +67,11 @@ const sessionOption = {
   };
 
 
-// // Main rout
-// app.get("/",(req,res)=>{
-//     // res.send("all right");
-//    res.render("listings/index.ejs");
-//  });
+// Main rout
+app.get("/",(req,res)=>{
+    
+   res.render("listings/index.ejs");
+ });
 
 app.use(session(sessionOption));
 app.use(flash());
