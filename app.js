@@ -30,7 +30,7 @@ main()
   })
   .catch((err) => console.log(err));
 async function main() {
-  await mongoose.connect(mongo_url);
+  await mongoose.connect(dbUrl);
 }
 
 // connecting ejs file with app.js
@@ -42,7 +42,7 @@ app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
 const store = MongoStore.create({
-  mongoUrl: mongo_url,
+  mongoUrl: dbUrl,
   crypto: {
     secret: process.env.SECRET,
   },
