@@ -13,10 +13,6 @@ User Authentication: Users can sign up, log in, and manage their profiles.
 
 Property Listings: Hosts can add, edit, and remove property listings.
 
-Search and Filters: Users can search for properties based on location, dates, and filters like price, amenities, etc.
-
-Booking System: Users can book properties and view their booking details.
-
 Responsive Design: The app is designed to be fully responsive, providing a great user experience on mobile devices and desktops.
 
 #Technologies Used
