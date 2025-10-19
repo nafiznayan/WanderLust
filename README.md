@@ -7,12 +7,12 @@ It allows users to **list, explore, and book rental properties** — replicating
 
 ## 🚀 Features
 
-- 🔐 **User Authentication** – Users can sign up, log in, and manage their profiles.
+- 🔐 **User Authentication** – Users can sign up, log in, and manage their listings.
 - 🏡 **Property Listings** – Hosts can add, edit, and remove their listings.
 - 💬 **Reviews & Ratings** – Users can leave reviews and ratings for properties.
 - 📱 **Responsive Design** – Works smoothly on both mobile and desktop devices.
 - 🗺️ **Map Integration (Optional)** – Displays listings on an interactive map.
-- 🖼️ **Image Uploads** – Supports multiple images per listing using Cloudinary.
+- 🖼️ **Image Uploads** – Hosts can upload images while listing properties.
 - ⚙️ **Secure Authorization** – Protected routes using Passport.js.
 
 ---
