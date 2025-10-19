@@ -57,11 +57,3 @@ It allows users to **list, explore, and book rental properties** — replicating
 ![Login](./public/images/review.png)
 
 ---
-
-## ⚙️ Installation & Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/nafiznayan/MERN-stack-project1.git
-   cd MERN-stack-project1
-   ```
