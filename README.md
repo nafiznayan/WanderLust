@@ -1,29 +1,67 @@
+# 🏠 WonderLust — Airbnb Clone (MERN Stack)
 
-# Airbnb Clone - MERN Stack
-This is a full-stack web application that replicates the basic features of Airbnb using the MERN stack (MongoDB, Express, React, Node.js). The app allows users to book and list properties, similar to the Airbnb platform, but in a simplified form.
+WonderLust is a full-stack web application inspired by **Airbnb**, built using the **MERN stack (MongoDB, Express.js, Node.js, and EJS)**.  
+It allows users to **list, explore, and book rental properties** — replicating the core functionality of Airbnb in a simplified form.
 
+---
 
+## 🚀 Features
 
+- 🔐 **User Authentication** – Users can sign up, log in, and manage their profiles.
+- 🏡 **Property Listings** – Hosts can add, edit, and remove their listings.
+- 💬 **Reviews & Ratings** – Users can leave reviews and ratings for properties.
+- 📱 **Responsive Design** – Works smoothly on both mobile and desktop devices.
+- 🗺️ **Map Integration (Optional)** – Displays listings on an interactive map.
+- 🖼️ **Image Uploads** – Supports multiple images per listing using Cloudinary.
+- ⚙️ **Secure Authorization** – Protected routes using Passport.js.
 
-## Appendix
+---
 
-#Features
+## 🛠️ Tech Stack
 
-User Authentication: Users can sign up, log in, and manage their profiles.
+| Category           | Technology                    |
+| ------------------ | ----------------------------- |
+| **Frontend**       | EJS Templates                 |
+| **Backend**        | Node.js, Express.js           |
+| **Database**       | MongoDB (Mongoose ODM)        |
+| **Styling**        | CSS3, Bootstrap, Tailwind CSS |
+| **Authentication** | Passport.js                   |
+| **Deployment**     | Render / Vercel               |
 
-Property Listings: Hosts can add, edit, and remove property listings.
+---
 
-Responsive Design: The app is designed to be fully responsive, providing a great user experience on mobile devices and desktops.
+## 📸 Screenshots
 
-#Technologies Used
+### 🏠 Home Page
 
-Frontend: EJS
+![Home Page](./public/images/home.png)
 
-Backend: Node.js, Express.js
+### 🏡 Property Listing
 
-Database: MongoDB (NoSQL)
+![Listing](./public/images/listing.png)
 
-Styling: CSS3, Bootstrap, Tailwind
+### 🔐 Sign up Page
 
-Deployment: Render (for hosting)
+![Login](./public/images/signup.png)
 
+### 🔐 Edit Listing
+
+![Login](./public/images/edit.png)
+
+### 🔐 View a Listing
+
+![Login](./public/images/view.png)
+
+### 🔐 Add Review
+
+![Login](./public/images/review.png)
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/nafiznayan/MERN-stack-project1.git
+   cd MERN-stack-project1
+   ```
